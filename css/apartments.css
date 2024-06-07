@@ -20,8 +20,9 @@
 
 .card__title{
     display: flex;
-    justify-conent: space-between;
-    }
+    justify-content: space-between;
+}
+
 /* верхний блок выбрать объект и показать */
 .form__info {
     display: flex;
@@ -45,12 +46,14 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
+    min-width: 100%;
 }
 .form__delete-info {
     text-decoration: none;
     color: #000;
     font-size: 18px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 8px;
 }
@@ -58,7 +61,7 @@
 /* средний блок со всем содержимым */
 .form__data {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 20px;
 }
@@ -69,6 +72,7 @@
 	color: #6C6C6C;
 	font-size: 14px;
 }
+
 .zone {
     font-family: 'DaysOne';
 	-moz-appearance: none;
@@ -84,6 +88,38 @@
     max-height: 65px;
     width: 100%;
 }
+
+.zone-sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DaysOne';
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 18px 65px;
+	outline: none;
+	cursor: pointer;
+	font-size: 18px;
+    max-height: 60px;
+    min-width: 310px;
+}
+.select-wrapper_sort::before {
+	content: "";
+	position: absolute;
+	background: url('../img/select-arrow.svg') no-repeat;
+	top: 50%;
+	right: 43px;
+	transform: translateY(-50%);
+	width: 17px;
+    height: 9px;
+	display: block;
+	pointer-events: none;
+}
+
 .select::-ms-expand {
 	display: none;
 }
@@ -94,21 +130,35 @@
     position: relative;
     max-height: 65px;
 }
+.select-wrapper_sort {
+    position: relative;
+    max-height: 60px;
+}
+.select-sort-wrapper {
+	position: relative;
+    max-height: 60px;
+    max-width: 310px;
+}
+.select-parking-wrapper {
+	position: relative;
+    max-height: 60px;
+    width: 100% !important;
+}
+
 .select-wrapper {
 	position: relative;
     max-height: 65px;
-    width: 100%;
-    max-width: 590px;
+    max-width: 100%;
 }
 .select-wrapper::before {
 	content: "";
 	position: absolute;
-	background: url('../img/select-arrow.svg') no-repeat right center / cover;
+	background: url('../img/select-arrow.svg') no-repeat;
 	top: 50%;
 	right: 15px;
 	transform: translateY(-50%);
-	width: 15px;
-    height: 8px;
+	width: 17px;
+    height: 9px;
 	display: block;
 	pointer-events: none;
 }
@@ -186,8 +236,6 @@ input::-webkit-inner-spin-button {
     width: 100%;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-
     display: flex;
 }
 
@@ -298,6 +346,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 5px;
     font-size: 18px;
     max-width: 310px;
@@ -312,11 +361,10 @@ input::-webkit-inner-spin-button {
 
 
 
-
-
 .cards__wpapper-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
     padding: 15px 0 30px 0;
     }
@@ -326,8 +374,8 @@ input::-webkit-inner-spin-button {
         justify-content: space-between;
         border-radius: 20px;
         border: 2px solid #000;
-        padding: 20px 50px;
-        max-width: 310px;
+        padding: 20px 40px;
+        width: 310px;
         min-height: 415px;
         background-color: #ffffff;
     }
@@ -343,16 +391,21 @@ input::-webkit-inner-spin-button {
 
     }
     .card__img {
-        margin: 15px 0 20px 0;
-        max-height: 170px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+        width: 100%;
         height: 100%;
     }
     .filter__card-img {
-        object-fit: contain;
+        margin: 15px 0 20px 0;
+        max-height: 170px;
+        max-width: 210px;
+        height: 100%;
     }
     .filter__card-img {
-    }
-    .card__text {
     }
     .filter__card-price {
         font-size: 24px;
@@ -371,3 +424,25 @@ input::-webkit-inner-spin-button {
         border: none;
         cursor: pointer;
     }
+
+
+
+@media (max-width: 1299px) {
+    .form__data {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 480px) {
+    
+    .filter__form {
+        padding: 25px 10px;
+    }
+    .form__info-title {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .form__info-link {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

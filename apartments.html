@@ -102,7 +102,7 @@
     
                             <div class="form__data">
     
-                                <div class="select-wrapper_appartment">
+                                <div class="select-wrapper select-wrapper_appartment">
                                     <div class="select-text">Объект</div>
                                     <select class="zone" id="zone">
                                         <option value="">Все</option>
@@ -177,12 +177,12 @@
                         </form>
                         
                         </div>
-                  
-                        <div class="filter-sort-select">
-                            <select name="filter-sort" id="filter-sort" class="filter-sort">
-                                <option value="0">по умолчанию<img src="img/select-arrow.svg" alt=""></option>
+
+                        <div class="sort-filter select-wrapper_sort select-sort-wrapper">
+                            <select name="filter-sort" id="filter-sort" class="filter-sort zone-sort">
                                 <option value="1">Сначала дешевле<img src="img/select-arrow.svg" alt=""></option>
                                 <option value="2">Сначала дороже<img src="img/select-arrow.svg" alt=""></option>
+                                <option value="0">По умолчанию<img src="img/select-arrow.svg" alt=""></option>
                             </select>
                         </div>
                         </div>
@@ -215,10 +215,10 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script src="js/filter.js"></script>
     <script src="js/favorite.js"></script>
     <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
 
 
 </body>

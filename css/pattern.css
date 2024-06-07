@@ -188,6 +188,7 @@ main {
     width: 100%;
     margin: 0 auto;
 }
+
 .header__content {
     display: flex;
     justify-content: space-between;
@@ -225,7 +226,7 @@ main {
     color: #5C9884;
     text-decoration: none;
 }
-.header__contact img {
+.header__contact-img {
     cursor: pointer;
 }
 

@@ -1,45 +1,75 @@
 window.DATA = window.DATA || [];
 window.DATA = window.DATA.concat([
     {
-        "area": 10,
-        "name": "Парковка СОБРАНИЕ",
-        "cost": 2000,
-        "zone": "event",
-        "image": "https://via.placeholder.com/300/09f/fff.png?text=Image+1"
-    },
-    {
-        "area": 20,
-        "name": "Парковка ДИВНЫЙ САД",
-        "cost": 1000,
-        "zone": "garden",
-        "image": "https://via.placeholder.com/300/0f9/fff.png?text=Image+2"
-    },
-    {
-        "area": 30,
-        "name": "Парковка ПОЛЕТ",
-        "cost": 1200,
+        "id": 21,
+        "area": 16.7,
+        "name": "Полет",
+        "cost": 3.843,
         "zone": "flight",
-        "image": "https://via.placeholder.com/300/f09/fff.png?text=Image+3"
+        "flat": "Машиноместо №276",
+        "image": "./img/filter/parking/pic-11.svg",
     },
     {
-        "area": 40,
-        "name": "Парковка ФАКЕЛ",
-        "cost": 1700,
+        "id": 22,
+        "area": 16.7,
+        "name": "Полет",
+        "cost": 3.658,
+        "zone": "flight",
+        "flat": "Машиноместо №277",
+        "image": "./img/filter/parking/pic-22.svg",
+    },
+    {
+        "id": 23,
+        "area": 13.5,
+        "name": "Факел",
+        "cost": 1.93,
         "zone": "fakel",
-        "image": "https://via.placeholder.com/300/9f0/fff.png?text=Image+4"
+        "flat": "Машиноместо №330",
+        "image": "./img/filter/parking/pic-33.svg",
     },
     {
-        "area": 50,
-        "name": "Парковка ПОЛЕТ",
-        "cost": 2000,
-        "zone": "flight",
-        "image": "https://via.placeholder.com/300/90f/fff.png?text=Image+5"
+        "id": 24,
+        "area": 13.5,
+        "name": "Факел",
+        "cost": 1.875,
+        "zone": "fakel",
+        "flat": "Машиноместо №332",
+        "image": "./img/filter/parking/pic-44.svg",
     },
     {
-        "area": 60,
-        "name": "Парковка ПОЛЕТ",
-        "cost": 2000,
-        "zone": "flight",
-        "image": "https://via.placeholder.com/300/f90/fff.png?text=Image+6"
+        "id": 25,
+        "area": 14.2,
+        "name": "Собрание 21",
+        "cost": 2.362,
+        "zone": "event",
+        "flat": "Машиноместо №27",
+        "image": "./img/filter/parking/pic-55.svg",
+    },
+    {
+        "id": 26,
+        "area": 13.8,
+        "name": "Собрание 21",
+        "cost": 4.139,
+        "zone": "event",
+        "flat": "Машиноместо №121",
+        "image": "./img/filter/parking/pic-66.svg",
+    },
+    {
+        "id": 27,
+        "area": 13.3,
+        "name": "Дивный сад",
+        "cost": 4.047,
+        "zone": "garden",
+        "flat": "Машиноместо №120",
+        "image": "./img/filter/parking/pic-77.svg",
+    },
+    {
+        "id": 28,
+        "area": 16.4,
+        "name": "Дивный сад",
+        "cost": 4.52,
+        "zone": "garden",
+        "flat": "Машиноместо №131",
+        "image": "./img/filter/parking/pic-88.svg",
     }
 ]);
