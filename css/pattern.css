@@ -126,7 +126,6 @@ main {
 
 
 
-
 /* block-down */
 .drop-container {
     position: relative;
@@ -142,38 +141,40 @@ main {
 
 .drop-container:hover .block-down {
     display: flex;
+    flex-direction: column;
     transform: translateY(100%);
 }
 .drop-container-desktop:hover .block-down{
     display: flex;
+    flex-direction: column;
     transform: translateY(100%);
-    padding-top: 5px;
 }
 
 .block-down {
     position: absolute;
     display: none;
-    min-width: 200px;
+    min-width: 150px;
     z-index: 999;
     list-style: none;
-    flex-direction: column;
-    gap: 2px;
-    bottom: 0;
+    bottom: 0px;
+    padding: 5px 0;
     left: 0;
     background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .block-down-link {
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 10px;
     color: #545454;
-    background-color: #a3cfc0;
     transition: background 0.5s ease;
 }
 .block-down-link:hover {
-    color: #ffffff;
-    background-color: #65867b;
-    transition: background 0.5s ease;
+    color: #000000;
+    background: #E3E3E3;
+    transition: color 0.2s ease;
 }
 
 
@@ -226,8 +227,16 @@ main {
     color: #5C9884;
     text-decoration: none;
 }
-.header__contact-img {
-    cursor: pointer;
+.heart-second{
+    display: none;
+} 
+.header-heart:hover .heart-second {
+    display: block;
+    width: 26px;
+    height: 22px;
+}
+.header-heart:hover .heart-first {
+    display: none;
 }
 
 

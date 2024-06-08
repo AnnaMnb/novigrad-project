@@ -47,20 +47,62 @@
 .slide-1 {
     background: url('../img/slide-1.jpg');
 }
+.slide-garden-2 {
+    background: url('../img/imgObj/garden-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 /* полет */
 .slide-2 {
     background: url('../img/slide-2.jpg');
+}
+.slide-flight-2 {
+    background: url('../img/imgObj/flight-2.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide-flight-3 {
+    background: url('../img/imgObj/flight-3.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* факел */
 .slide-3 {
     background: url('../img/slide-3.jpg');
 }
+.slide-fakel-2 {
+    background: url('../img/fakel.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide-fakel-3 {
+    background: url('../img/imgObj/fakel-3.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide-fakel-4 {
+    background: url('../img/imgObj/fakel-4.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 /* собрание 21 */
 .slide-4 {
     background: url('../img/slide-4.jpg');
+}
+.slide-event-2 {
+    background: url('../img/imgObj/event-2.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .slider-button {

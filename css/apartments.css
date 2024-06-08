@@ -326,17 +326,17 @@ input::-webkit-inner-spin-button {
     width: 92px;
     height: 65px;
  }
-.checkbox-btn input[type=checkbox]:checked + .checkbox-number {
-	background: #abecd7;
+ .checkbox-btn input[type=checkbox]:checked + .checkbox-number {
+	background: rgb(0, 0, 0, 0.15);
     transition: background 0.2s ease;
 }
 .checkbox-btn:hover {
-	background: #7FC7AF;
+	background: rgb(0, 0, 0, 0.15);
     border-radius: 20px;
     transition: background 0.2s ease;
 }
 .checkbox-btn input[type=checkbox]:active:not(:disabled) + .checkbox-number {
-	background: #a8e0ce;
+	background: rgb(0, 0, 0, 0.1);
 	color: #000;
     transition: color 0.2s ease;
     transition: background 0.2s ease;
