@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="card__title">
                     <h3 class="filter__card-title">${item.name}</h3>
                     <button class="remove-favorite-button" data-id="${item.id}">
-                        <img class="black-heart" src="/img/black-heart.svg">
+                        <img class="black-heart" src="./img/black-heart.svg">
                     </button>
                 </div>
                 <div class="card__img">
